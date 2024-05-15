@@ -1,11 +1,14 @@
 /* styles.css */
 
 body {
-    background-image: url(Images/fantasy_art.png);
+    display:flex;
+    flex-direction: column;
+    background-image: url(Images/aurora.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     text-align: center;
+    justify-content: center;
     padding-top: 100px;
     margin: 0;
     padding: 0;
