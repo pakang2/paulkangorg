@@ -1,31 +1,77 @@
-/* styles.css */
-
 body {
-    display:flex;
-    flex-direction: column;
-    background-image: url(Images/aurora.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    justify-content: center;
-    padding-top: 100px;
     margin: 0;
-    padding: 0;
-    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
 }
 
-a {
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #6e6e73;
+    margin-bottom: 40px;
+}
+
+/* GENERAL SECTIONS */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.buttons a {
     display: inline-block;
     margin: 10px;
+    padding: 12px 24px;
+    border-radius: 999px;
+
     text-decoration: none;
+    font-weight: 500;
+
+    background-color: #0071e3;
     color: white;
-    background-color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+
+    transition: all 0.3s ease;
 }
 
-a:hover {
-    background-color: #555;
+.buttons a:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+/* FADE-IN ANIMATION (initial state) */
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* WHEN VISIBLE */
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
